@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3F51B5"
+        android:foregroundTint="#3F51B5">
+
+        <TextView
+            android:id="@+id/textViewResultado"
+            android:layout_width="172dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="112dp"
+            android:background="#FFFFFF"
+            android:text="La suma de 10 y 5 es :"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewTotal"
+            android:layout_width="89dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="100dp"
+            android:background="#30FF00"
+            android:text="15"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewResultado" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
